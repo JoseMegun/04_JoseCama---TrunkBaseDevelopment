@@ -1,45 +1,27 @@
-# 04_JoseCama-TrunkBaseDevelopment
+# MARIAENRIQUETASYSTEM
 
-## ¿Qué es Trunk-Based Development?
-Trunk-Based Development es una estrategia de desarrollo de software donde todos los desarrolladores integran pequeños cambios frecuentes en una rama principal compartida, denominada `trunk` o `main`. Esta metodología promueve la colaboración continua y la entrega rápida de software.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.14.
 
-## Beneficios de Trunk-Based Development
-- **Integración Continua (CI):** Fomenta la integración constante de código, reduciendo problemas de fusión de ramas a largo plazo.
-- **Despliegue Rápido:** Permite lanzamientos rápidos y frecuentes al mantener el `trunk` siempre en un estado desplegable.
-- **Colaboración Eficiente:** Facilita la colaboración entre equipos al minimizar la divergencia del código.
-- **Reducción de Riesgos:** Detecta errores y conflictos de manera temprana mediante pruebas automatizadas.
+## Development server
 
-## Implementación de TBD en Microservicios:
-### Estructura de Ramas
-- **`main` (trunk):** La rama principal y única donde se integran todos los cambios.
-- **`feature/{feature-name}`:** Ramas de corta duración para el desarrollo de nuevas características. Se deben fusionar rápidamente con `main`.
-- **`hotfix/{hotfix-name}`:** Ramas para corregir errores críticos que requieren atención inmediata.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-### Buenas Prácticas
-1. **Integración Continua:**
-   - Configura pipelines de CI/CD para ejecutar pruebas y verificaciones automáticas en cada commit a `main`.
-   - Asegúrate de que el código en `main` siempre esté en un estado desplegable.
+## Code scaffolding
 
-2. **Desarrollo de Funcionalidades:**
-   - Divide las características grandes en tareas más pequeñas que puedan integrarse frecuentemente.
-   - Realiza revisiones de código para garantizar la calidad y consistencia.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-3. **Pruebas Automatizadas:**
-   - Implementa pruebas unitarias y de integración para cada microservicio.
-   - Asegura que todas las pruebas se ejecuten y pasen antes de fusionar cambios a `main`.
+## Build
 
-4. **Despliegue Continuo:**
-   - Automatiza el despliegue de `main` a los entornos de desarrollo, prueba y producción.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-### Ejemplo de Flujo de Trabajo:
-1. **Crear una Nueva Funcionalidad:**
-   - Crea una rama `feature/{feature-name}` desde `main`.
-   - Implementa la funcionalidad y realiza commit frecuentemente.
-   - Fusiona los cambios con `main` tan pronto como sea posible.
+## Running unit tests
 
-2. **Resolver un Error Crítico:**
-   - Crea una rama `hotfix/{hotfix-name}` desde `main`.
-   - Soluciona el error, realiza pruebas y fusiona de nuevo en `main`.
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-3. **Preparar un Lanzamiento:**
-   - Los cambios en `main` son automáticamente desplegados en producción cuando cumplen con todos los criterios de calidad.
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
